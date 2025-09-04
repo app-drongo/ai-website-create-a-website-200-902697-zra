@@ -1,9 +1,3 @@
-// Pricing Component
-// Generated: 2025-09-04T13:18:22.653Z
-// Template: pricing-c001
-// Context: Homepage
-// Position: pages.0.sections.3
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -22,11 +16,11 @@ export default function Pricing() {
       features: [
         "Up to 5 vehicles",
         "Standard sedan & compact cars",
-        "Basic maintenance included",
+        "Basic insurance coverage",
         "24/7 roadside assistance",
-        "Monthly billing flexibility",
+        "Monthly billing",
         "Online fleet management",
-        "Insurance coverage included"
+        "Maintenance included"
       ],
       cta: "Request Fleet Quote",
       popular: false
@@ -34,44 +28,44 @@ export default function Pricing() {
     {
       name: "Professional Fleet",
       description: "Ideal for growing companies and corporate teams",
-      price: "$799",
+      price: "$699",
       period: "/month",
       badge: "Most Popular",
       icon: Users,
       features: [
-        "Up to 25 vehicles",
+        "Up to 20 vehicles",
         "Premium sedans & SUVs available",
-        "Comprehensive maintenance",
+        "Comprehensive insurance",
         "Priority roadside support",
-        "Flexible lease terms",
+        "Flexible billing options",
         "Advanced fleet analytics",
         "Dedicated account manager",
-        "Custom branding options",
-        "Driver training programs"
+        "Vehicle customization options",
+        "GPS tracking included"
       ],
-      cta: "Schedule Fleet Consultation",
+      cta: "Schedule Consultation",
       popular: true
     },
     {
       name: "Enterprise Fleet",
-      description: "For large corporations with complex transportation needs",
+      description: "For large corporations with extensive vehicle needs",
       price: "Custom",
       period: "",
-      badge: "White Glove Service",
+      badge: "Premium Solution",
       icon: Shield,
       features: [
         "Unlimited vehicle capacity",
         "Full luxury & specialty vehicles",
-        "Complete maintenance & detailing",
-        "24/7 concierge support",
-        "Custom lease agreements",
-        "Real-time fleet tracking",
-        "Executive transportation",
+        "Premium insurance package",
+        "24/7 dedicated support line",
+        "Custom contract terms",
+        "Real-time fleet monitoring",
+        "Executive transportation services",
         "Multi-location management",
-        "Compliance & reporting tools",
-        "Strategic partnership benefits"
+        "Custom branding options",
+        "Quarterly business reviews"
       ],
-      cta: "Contact Enterprise Sales",
+      cta: "Contact Fleet Specialist",
       popular: false
     }
   ]
@@ -81,18 +75,18 @@ export default function Pricing() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-2 border-primary/20">
-            Fleet Pricing Plans
+          <Badge variant="outline" className="mb-4 px-4 py-2">
+            Fleet Pricing
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Professional Fleet Solutions
-            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Tailored for Business
+            Transparent Fleet
+            <span className="block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+              Solutions
             </span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Streamline your corporate transportation with ProFleet Rentals. 
-            Transparent pricing, premium vehicles, and dedicated support for your business needs.
+            Professional vehicle leasing plans designed for business success. 
+            No hidden costs, flexible terms, and comprehensive support included.
           </p>
           
           {/* Billing Toggle */}
@@ -102,7 +96,7 @@ export default function Pricing() {
             </button>
             <button className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Annual Contract
-              <Badge variant="secondary" className="ml-2 text-xs bg-accent/20 text-accent">
+              <Badge variant="secondary" className="ml-2 text-xs">
                 Save 15%
               </Badge>
             </button>
@@ -138,16 +132,13 @@ export default function Pricing() {
 
               <CardHeader className="relative text-center pb-8">
                 {plan.badge && !plan.popular && (
-                  <Badge variant="outline" className="mb-4 mx-auto w-fit border-accent/30 text-accent">
+                  <Badge variant="outline" className="mb-4 mx-auto w-fit">
                     {plan.badge}
                   </Badge>
                 )}
                 
                 <div className="mb-4">
-                  <plan.icon className={cn(
-                    "size-12 mx-auto",
-                    plan.popular ? "text-primary" : "text-secondary"
-                  )} />
+                  <plan.icon className="size-12 mx-auto text-primary" />
                 </div>
                 
                 <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
@@ -192,7 +183,7 @@ export default function Pricing() {
 
                 {plan.name === "Professional Fleet" && (
                   <p className="text-center text-sm text-muted-foreground">
-                    Free fleet assessment • No commitment required
+                    Free consultation • No commitment required
                   </p>
                 )}
               </CardContent>
@@ -206,11 +197,11 @@ export default function Pricing() {
             Need a custom fleet solution?
           </h3>
           <p className="text-muted-foreground mb-6">
-            Every business has unique transportation requirements. Our fleet specialists 
-            will design a tailored solution that optimizes your corporate mobility and reduces costs.
+            ProFleet Rentals specializes in tailored corporate transportation solutions. 
+            Let our fleet experts design the perfect vehicle program for your business needs.
           </p>
-          <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/5">
-            Book Fleet Strategy Session
+          <Button variant="outline" size="lg">
+            Book Fleet Assessment
           </Button>
         </div>
       </div>

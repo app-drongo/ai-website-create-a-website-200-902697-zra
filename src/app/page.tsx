@@ -4,6 +4,7 @@ import Services from '@/components/Services';
 import Pricing from '@/components/Pricing';
 import Contacthomepage from '@/components/Contacthomepage';
 import Cta from '@/components/Cta';
+import Pricing from '@/components/Pricing';
 
 export default function HomepagePage() {
   return (
@@ -26,6 +27,7 @@ export default function HomepagePage() {
       <section id="section-5" className="scroll-mt-16">
         <Cta />
       </section>
+      <section id="pricing"><Pricing /></section>
     </main>
   );
 }

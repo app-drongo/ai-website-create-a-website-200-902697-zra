@@ -21,6 +21,7 @@ export default function Navigation() {
     { name: "Services", href: "#services" },
     { name: "Pricing", href: "#pricing" },
     { name: "Contact", href: "#contact" },
+    { name: 'Pricing', href: '#pricing' },
   ]
 
   return (
